@@ -8,9 +8,7 @@ interface TabIconProps {
 }
 
 const TabIcon = ({ focused, source }: TabIconProps) => (
-  <View
-    className={`flex flex-row justify-center items-center rounded-full ${focused ? "bg-general-300" : ""}`}
-  >
+
     <View
       className={`rounded-full w-12 h-12 items-center justify-center ${focused ? "bg-general-400" : ""}`}
     >
@@ -21,13 +19,13 @@ const TabIcon = ({ focused, source }: TabIconProps) => (
         className="w-7 h-7"
       />
     </View>
-  </View>
+
 );
 
 const TabsLayout = () => {
   return (
     <Tabs
-      initialRouteName="index"
+      initialRouteName="home"
       screenOptions={{
         tabBarActiveTintColor: "white",
         tabBarInactiveTintColor: "white",
@@ -35,7 +33,7 @@ const TabsLayout = () => {
         tabBarStyle: {
           backgroundColor: "#333333",
           borderRadius: 50,
-          paddingBottom: 0,
+          paddingBottom: 30,
           overflow: "hidden",
           marginHorizontal: 20,
           marginBottom: 20,

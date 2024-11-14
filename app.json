@@ -27,7 +27,20 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      [ "expo-router", {"origin": "https://uber.com/"} ]
+      [
+        "expo-router",
+        {
+          "origin": "https://uber.com/"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Ryde to use your location."
+        }
+      ],
+      "expo-font",
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true
